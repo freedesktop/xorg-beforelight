@@ -30,6 +30,6 @@ beforelight_SOURCES =		\
 dist_man_MANS = \
              b4light.man
 
-app_defaultdir = /etc/X11/app-defaults
+app_defaultdir = $(sysconfdir)/X11/app-defaults
 
 dist_app_default_DATA = B4light.ad
