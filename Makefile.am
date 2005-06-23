@@ -27,5 +27,9 @@ beforelight_LDADD = $(DEP_LIBS)
 beforelight_SOURCES =		\
          b4light.c
 
-man_MANS = \
+dist_man_MANS = \
              b4light.man
+
+app_defaultdir = /etc/X11/app-defaults
+
+dist_app_default_DATA = B4light.ad
