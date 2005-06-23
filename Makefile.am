@@ -24,12 +24,27 @@ bin_PROGRAMS = beforelight
 beforelight_CFLAGS = $(DEP_CFLAGS)
 beforelight_LDADD = $(DEP_LIBS)
 
-beforelight_SOURCES =		\
-         b4light.c
+beforelight_SOURCES =	\
+        b4light.c \
+        config.h
 
 dist_man_MANS = \
-             b4light.man
+        b4light.man
 
-app_defaultdir = $(sysconfdir)/X11/app-defaults
+# App default files  (*.ad)
 
-dist_app_default_DATA = B4light.ad
+appdefaultdir = $(sysconfdir)/X11/app-defaults
+
+EXTRA_DIST = \
+        B4light.ad
+
+APPDEFAULTFILES = \
+        B4light
+
+$(APPDEFAULTFILES): %: %.ad
+	cp $< $@
+
+appdefault_DATA = $(APPDEFAULTFILES)
+
+CLEANFILES = $(APPDEFAULTFILES)
+
