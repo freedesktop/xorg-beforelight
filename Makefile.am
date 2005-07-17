@@ -41,7 +41,9 @@ EXTRA_DIST = \
 APPDEFAULTFILES = \
         B4light
 
-$(APPDEFAULTFILES): %: %.ad
+SUFFIXES = .ad
+
+.ad:
 	cp $< $@
 
 appdefault_DATA = $(APPDEFAULTFILES)
