@@ -21,8 +21,8 @@
 
 bin_PROGRAMS = beforelight
 
-beforelight_CFLAGS = $(DEP_CFLAGS)
-beforelight_LDADD = $(DEP_LIBS)
+beforelight_CFLAGS = $(BEFORELIGHT_CFLAGS)
+beforelight_LDADD = $(BEFORELIGHT_LIBS)
 
 beforelight_SOURCES =	\
         b4light.c \
