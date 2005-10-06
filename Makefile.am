@@ -29,7 +29,7 @@ beforelight_SOURCES =	\
         config.h
 
 dist_man1_MANS = \
-        b4light.man
+        beforelight.man
 
 # App default files  (*.ad)
 
