@@ -1,3 +1,4 @@
+# $Id$
 # 
 #  Copyright 2005  Red Hat, Inc.
 # 
@@ -36,10 +37,10 @@ dist_man1_MANS = \
 appdefaultdir = $(sysconfdir)/X11/app-defaults
 
 EXTRA_DIST = \
-        B4light.ad
+        Beforelight.ad
 
 APPDEFAULTFILES = \
-        B4light
+        Beforelight
 
 SUFFIXES = .ad
 
