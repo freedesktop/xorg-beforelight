@@ -36,6 +36,10 @@ PKG_CHECK_MODULES(BEFORELIGHT, x11 xscrnsaver xt xaw7)
 AC_SUBST(BEFORELIGHT_CFLAGS)
 AC_SUBST(BEFORELIGHT_LIBS)
 
+PKG_CHECK_MODULES(APPDEFS, xt)
+appdefaultdir=$(pkg-config --variable=appdefaultdir xt)
+AC_SUBST(appdefaultdir)
+
 XORG_MANPAGE_SECTIONS
 XORG_RELEASE_VERSION
 
