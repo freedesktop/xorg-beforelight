@@ -33,8 +33,6 @@ appman_PRE = \
 
 # App default files  (*.ad)
 
-appdefaultdir = @appdefaultdir@
-
 EXTRA_DIST = \
         Beforelight.ad
 
