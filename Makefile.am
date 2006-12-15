@@ -26,8 +26,7 @@ beforelight_CFLAGS = $(BEFORELIGHT_CFLAGS)
 beforelight_LDADD = $(BEFORELIGHT_LIBS)
 
 beforelight_SOURCES =	\
-        b4light.c \
-        config.h
+        b4light.c
 
 appman_PRE = \
         beforelight.man
@@ -50,7 +49,6 @@ SUFFIXES = .ad
 appdefault_DATA = $(APPDEFAULTFILES)
 
 CLEANFILES = $(APPDEFAULTFILES)
-
 
 appmandir = $(APP_MAN_DIR)
 
