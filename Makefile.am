@@ -22,7 +22,7 @@
 
 bin_PROGRAMS = beforelight
 
-beforelight_CFLAGS = $(BEFORELIGHT_CFLAGS)
+AM_CFLAGS = $(BEFORELIGHT_CFLAGS)
 beforelight_LDADD = $(BEFORELIGHT_LIBS)
 
 beforelight_SOURCES =	\
@@ -34,14 +34,15 @@ appman_PRE = \
 # App default files  (*.ad)
 
 EXTRA_DIST = \
-        Beforelight.ad
+        app-defaults/Beforelight.ad
 
 APPDEFAULTFILES = \
-        Beforelight
+        app-defaults/Beforelight
 
 SUFFIXES = .ad
 
 .ad:
+	$(mkdir_p) app-defaults
 	cp $< $@
 
 appdefault_DATA = $(APPDEFAULTFILES)
