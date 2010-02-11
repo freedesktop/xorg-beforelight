@@ -22,7 +22,7 @@
 
 bin_PROGRAMS = beforelight
 
-AM_CFLAGS = $(BEFORELIGHT_CFLAGS)
+AM_CFLAGS = $(BEFORELIGHT_CFLAGS) $(CWARNFLAGS)
 beforelight_LDADD = $(BEFORELIGHT_LIBS)
 
 beforelight_SOURCES =	\
