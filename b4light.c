@@ -32,7 +32,9 @@ in this Software without prior written authorization from the X Consortium.
 #include <X11/Intrinsic.h>
 #include <X11/StringDefs.h>
 #include <X11/Shell.h>
+#ifdef NOTDEF
 #include <X11/Xaw/Label.h>
+#endif
 #include <X11/Xaw/Cardinals.h>
 #include <X11/extensions/scrnsaver.h>
 #include <X11/Xcms.h>
