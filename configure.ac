@@ -34,15 +34,9 @@ XORG_DEFAULT_OPTIONS
 
 AM_CONFIG_HEADER(config.h)
 
-AC_PROG_CC
-AC_PROG_INSTALL
-
-
 # Checks for pkg-config packages
 PKG_CHECK_MODULES(BEFORELIGHT, x11 xscrnsaver xt)
 PKG_CHECK_MODULES(XAW, xaw7)
-AC_SUBST(BEFORELIGHT_CFLAGS)
-AC_SUBST(BEFORELIGHT_LIBS)
 
 PKG_CHECK_MODULES(APPDEFS, xt)
 xt_appdefaultdir=`$PKG_CONFIG --variable=appdefaultdir xt`
