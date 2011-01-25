@@ -38,7 +38,6 @@ AC_CONFIG_HEADERS([config.h])
 
 # Checks for pkg-config packages
 PKG_CHECK_MODULES(BEFORELIGHT, x11 xscrnsaver xt)
-PKG_CHECK_MODULES(XAW, xaw7)
 
 PKG_CHECK_MODULES(APPDEFS, xt)
 xt_appdefaultdir=`$PKG_CONFIG --variable=appdefaultdir xt`
